@@ -119,9 +119,11 @@ class RefreshAnnouncements {
     // labels the button if the announcement based on if it is new or not
     if (!newAnnouncement) {
       this.openAnnouncementButton.node.textContent = 'Announcements';
+      this.openAnnouncementButton.node.style.backgroundColor = '';
     } else {
       this.openAnnouncementButton.node.textContent =
-        '⚠️ Click for Announcements';
+        '⚠️  Click for Announcements';
+      this.openAnnouncementButton.node.style.backgroundColor = 'lightpink';
     }
   }
 
